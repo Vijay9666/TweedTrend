@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>TweedTrend</title>
+
+  <style media="screen">
+    .footer {
+      position: fixed;
+    }
+    
+    /* Style for paragraph text */
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 20px 0;
+    }
+    
+    /* Style for heading text */
+    h3 {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 40px 0 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body style="background-color: #f7f8fa;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  
+  <!-- Add spacing for readability -->
+  <div style="padding: 30px;">
+    <h3>Motivated Storys</h3>
+    <p>Sturdy tweed fabrics, designed to withstand brutal cold and rainy climates, have been part Irish culture for centuries. Today, County Donegal in the north of Ireland is the last bastion of garment manufacturing in the country. The largest remaining mill—Magee, Molloy & McNutt—dates back to 1866, and produces much of the region's tweeds, but many are still produced in the homes of local artisans. The quintessential Donegal tweed is plain-weave cloth with multicolor yarns added at intervals to create a heathered effect.</p>
+
+    <p>Using traditional weaving techniques and custom-made handlooms, Irish heritage brand Mourne Textiles is a family business that started in the 1940s in a workshop at the foot of the beautiful Mourne Mountains in County Down. Look for wide scarves in earthy tones that are delicately light and soft to the touch and finished with a natural, loose fringe. Blankets, rugs, and cushion covers also make great souvenirs.</P>
+  </div>
+  
+  <!-- Add spacing for readability -->
+  <div style="padding: 30px;">
+    <h3>About Tweed</h3>
+    <p>Tweed fabric has a long and fascinating history in Ireland. The material was first created in Scotland, but it quickly spread to Ireland and became a beloved part of Irish culture. The River Tweed, which flows through the Scottish Borders and into the North Sea, gave the fabric its name.
+
+      In Ireland, tweed became an essential part of traditional Irish dress, particularly for outdoor activities like hunting and fishing. The fabric was perfect for the damp, cold Irish climate and was prized for its durability and warmth.
+      
+      Tweed was originally made by hand, using local wool and traditional weaving techniques. In the 19th century, the Industrial Revolution brought changes to the production of tweed, and mills began to spring up across Ireland. These mills brought new technologies and innovations to the production of tweed, making it faster and more efficient to produce.
+      
+      One of the most famous tweed mills in Ireland is Magee of Donegal, which was founded in 1866. Magee is still producing tweed today, using traditional techniques and locally-sourced wool. The company is known for its beautiful tweed jackets, which are often worn by Irish politicians and celebrities.
+      
+      Today, tweed is still a popular fabric in Ireland, both for its practical qualities and its connection to Irish heritage. Many Irish fashion designers incorporate tweed into their collections, creating modern and stylish looks that pay homage to this beloved fabric.</p>
+  </div>
+
+  {% include "ecom/footer.html" %}
+</body>
+
+</html>

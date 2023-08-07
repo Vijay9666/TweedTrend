@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>TweedTrend</title>
+
+  <style media="screen">
+    .footer {
+      position: fixed;
+    }
+    
+    p {
+      font-size: 19px;
+      line-height: 1.6;
+      margin: 20px 0;
+    }
+    
+    h3 {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 40px 0 20px;
+      text-align: center;
+      text-style: h1;
+    }
+  </style>
+</head>
+
+<body style="background-color: #f7f8fa;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+    <div style="padding: 120px;">
+    <h3>Welcome to our Tweed Cloth online shopping website!</h3>
+    <p>
+      We are a team of passionate individuals who love everything about tweed. Our mission is to provide high-quality tweed cloth to our customers, while also offering a seamless shopping experience.
+      
+      Our journey began with a simple idea - to make it easier for people to access the beauty and luxury of tweed cloth. We understand that tweed is a timeless fabric that is not only fashionable but also practical. Our aim is to help our customers discover the versatility and elegance of tweed, and to make it more accessible to a wider audience.
+      
+      At Tweed Cloth, we pride ourselves on our exceptional customer service. Our team is always on hand to help you with any queries or concerns that you may have, and we are committed to providing the best possible shopping experience for our customers.
+      
+      We source our tweed cloth from only the best suppliers, ensuring that our customers receive the highest quality products. We also offer a wide range of tweed cloth, from traditional Harris tweed to more contemporary designs, so that there is something for everyone.
+      
+      We believe that shopping should be a seamless and enjoyable experience, which is why we have made our website easy to navigate and user-friendly. We also offer fast and reliable shipping to ensure that your tweed cloth arrives in a timely manner.
+      
+      Thank you for choosing Tweed Cloth as your go-to destination for all things tweed. We look forward to serving you and helping you discover the beauty and versatility of this timeless fabric.</p>
+    
+  </div>
+  
+  
+
+  {% include "ecom/footer.html" %}
+</body>
+
+</html>
