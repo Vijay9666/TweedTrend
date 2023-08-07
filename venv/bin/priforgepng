@@ -1,4 +1,4 @@
-#!/home/ec2-user/environment/x22156411-TweedTrend/venv/bin/python3
+#!/home/ec2-user/environment/Vijay/venv/bin/python3
 # priforgepng
 
 """Forge PNG image from raw computation."""
